@@ -36,7 +36,7 @@
     "url": "https://github.com/danielbrown4/danbrown-portfolio.git"
   },
   "scripts": {
-    "start": "PORT=3006 react-scripts start",
+    "start": "react-scripts start",
     "webpack": "webpack",
     "build": "react-scripts build",
     "test": "react-scripts test",
