@@ -3,7 +3,7 @@ import "../project_main/style.css";
 import { Col, Card, Row, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImages, faLink } from "@fortawesome/free-solid-svg-icons";
-import info from "../../const/project_info.json";
+import info from "../../const/project_info";
 import Lightbox from "react-image-lightbox";
 
 console.log(info.data);
@@ -25,24 +25,7 @@ export default class PM extends Component {
       <Row xl={12} className="main_row">
         {info.data.map((item) => (
           <>
-            {isOpen && (
-              <Lightbox
-                mainSrc={image[photoIndex]}
-                nextSrc={image[(photoIndex + 1) % image.length]}
-                prevSrc={image[(photoIndex + image.length - 1) % image.length]}
-                onCloseRequest={() => this.setState({ isOpen: false })}
-                onMovePrevRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + image.length - 1) % image.length,
-                  })
-                }
-                onMoveNextRequest={() =>
-                  this.setState({
-                    photoIndex: (photoIndex + 1) % image.length,
-                  })
-                }
-              />
-            )}
+            {isOpen && <Card />}
             <Col xl={6} key={item.id} className="card_col">
               <a href={item.link} target="_blank">
                 <Card
