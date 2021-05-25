@@ -2,6 +2,48 @@ export default {
   data: [
     {
       id: 0,
+      name: "Website - POP 95,1 FM",
+      tools: "Wordpress - PHP - Javascript",
+      link: "https://www.pop95fm.com.br/",
+      image: [require("../assets/img/popradio.jpg")],
+    },
+    {
+      id: 0,
+      name: "Website - Sakuravee: Streamer, Influencer",
+      tools: "Next JS - React JS - SASS - Node JS",
+      link: "https://sakuravee.tk/home",
+      image: [require("../assets/img/sakuravee.jpg")],
+    },
+    {
+      id: 0,
+      name: "Website - Nobilis! Marketing e Gestão",
+      tools: "Wordpress - PHP - Javascript",
+      link: "https://www.nobilismkt.com/",
+      image: [require("../assets/img/nobilis.jpg")],
+    },
+    {
+      id: 0,
+      name: "Website - Renata Carvalho Advogada",
+      tools: "PHP - SASS - HTML - CSS - Javascript",
+      link: "https://renatacarvalhoadvogada.com.br/",
+      image: [require("../assets/img/renataadvogada.jpg")],
+    },
+    {
+      id: 0,
+      name: "Website - Tonz Tintas",
+      tools: "Wordpress - PHP - Javascript",
+      link: "https://tonz.com.br/",
+      image: [require("../assets/img/tonz.jpg")],
+    },
+    {
+      id: 0,
+      name: "Website - Avante Guerreira! Marcinha Silveira",
+      tools: "Next JS - React JS - SASS - Node JS",
+      link: "https://avanteguerreira.com.br/",
+      image: [require("../assets/img/marcinha.jpg")],
+    },
+    {
+      id: 0,
       name: "Website - Shopping Ibituruna",
       tools: "PHP - SASS - HTML - CSS - Javascript",
       link: "http://ibiturunacenter.com.br/",
@@ -157,7 +199,7 @@ export default {
     },
     {
       id: 21,
-      name: "This Website",
+      name: "My Portfolio",
       tools: "React - Typescript",
       link: "https://danielbrown.com.br/",
       image: [require("../assets/img/port.png")],

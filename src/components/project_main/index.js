@@ -31,7 +31,7 @@ export default class PM extends Component {
                 <Card
                   className="card_main"
                   style={{
-                    minHeight: 550,
+                    height: "100%",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
@@ -54,11 +54,15 @@ export default class PM extends Component {
                     </strong>
                   </footer>
                   <br />
-                  <Image
+                  <img
                     src={item.image[0]}
-                    style={{ maxWidth: 600, maxHeight: 320 }}
+                    style={{
+                      objectFit: "contain",
+                      width: "100%",
+                      maxHeight: 420,
+                    }}
                   />
-                  <br />
+                  {/* {  <br />
                   <Card.Body>
                     &nbsp;&nbsp;
                     {item.link !== false && (
@@ -70,7 +74,7 @@ export default class PM extends Component {
                         />
                       </Card.Link>
                     )}
-                  </Card.Body>
+                  </Card.Body>} */}
                 </Card>
               </a>
             </Col>
