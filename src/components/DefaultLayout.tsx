@@ -22,17 +22,29 @@ import Footer from "./Footer";
 
 function DefaultLayout({ meta, children, ...otherProps }: any) {
   return (
-    <Page backgroundColor="shade" {...otherProps}>
+    <Container
+      backgroundColor="#1E2DEA"
+      shape="square"
+      display="flex"
+      align="center"
+      justify="center"
+      maxWidth="100vw"
+      maxHeight="100vh"
+      width="100vw"
+      height="100vh"
+      {...otherProps}
+      style={{ overflow: "hidden" }}
+    >
       <Head {...meta} />
 
-      <Header />
+      {/* <Header /> */}
 
-      <Flex mt={{ xs: -1, md: 2 }} p={2} direction="column">
-        {children}
-      </Flex>
+      {/* <Flex mt={{ xs: -1, md: 2 }} p={2} direction="column"> */}
+      {children}
+      {/* </Flex> */}
 
-      <Footer />
-    </Page>
+      {/* <Footer /> */}
+    </Container>
   );
 }
 

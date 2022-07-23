@@ -18,11 +18,13 @@ const LoadingProvider = ({ children }) => {
     router.events.on("routeChangeError", handleComplete);
   }, [router]);
 
-  if (loading) {
-    return <LoadingScreen />;
-  } else {
-    return <>{children}</>;
-  }
+  return children;
+
+  // if (loading) {
+  //   return <LoadingScreen />;
+  // } else {
+  //   return <>{children}</>;
+  // }
 };
 
 export default LoadingProvider;

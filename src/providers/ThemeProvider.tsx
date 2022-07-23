@@ -10,16 +10,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { settingsInit } from "../redux/slices/settings";
 
 const ThemeProvider = ({ children }) => {
-  const { theme } = useSelector((state: any) => state.settings);
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(settingsInit());
-  }, [dispatch]);
-
   return (
-    <WipsieThemeProvider theme={theme}>
+    <WipsieThemeProvider theme="dark">
       <CssBaseline />
       <NprogressBaseline type="bar" height="3px" />
       <TopProgressBar />

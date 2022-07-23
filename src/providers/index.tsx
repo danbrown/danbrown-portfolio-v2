@@ -4,11 +4,11 @@ import LoadingProvider from "./LoadingProvider";
 
 const Providers = ({ children }) => {
   return (
-    <ReduxProvider>
-      <ThemeProvider>
-        <LoadingProvider>{children}</LoadingProvider>
-      </ThemeProvider>
-    </ReduxProvider>
+    // <ReduxProvider>
+    <ThemeProvider>
+      <LoadingProvider>{children}</LoadingProvider>
+    </ThemeProvider>
+    // </ReduxProvider>
   );
 };
 

@@ -25,7 +25,7 @@ export default function Home(props) {
 
   return (
     <DefaultLayout meta={{}}>
-      <CustomFrame />
+      {/* <CustomFrame /> */}
 
       {/* <motion.img
         src="./static/shape-stripes.svg"
@@ -42,6 +42,22 @@ export default function Home(props) {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       /> */}
+
+      <video
+        src="./assets/phone.mp4"
+        loop
+        muted
+        autoPlay
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          objectPosition: "center",
+        }}
+      ></video>
 
       <Flex
         justify="center"
