@@ -15,14 +15,22 @@ import {
   Link,
   Hidden,
   Grid,
+  PageProps,
 } from "@wipsie/ui";
-import Head from "./Head";
-import Header from "./Header";
-import Footer from "./Footer";
+import { Head, HeadProps } from "./Head";
 
-function DefaultLayout({ meta, children, ...otherProps }: any) {
+export type DefaultLayoutProps = PageProps & {
+  children: React.ReactNode;
+  meta?: HeadProps;
+};
+
+export function DefaultLayout({
+  meta,
+  children,
+  ...otherProps
+}: DefaultLayoutProps) {
   return (
-    <Container
+    <Page
       backgroundColor="#1E2DEA"
       shape="square"
       display="flex"
@@ -33,7 +41,7 @@ function DefaultLayout({ meta, children, ...otherProps }: any) {
       width="100vw"
       height="100vh"
       {...otherProps}
-      style={{ overflow: "hidden" }}
+      style={{ overflow: "hidden", ...otherProps?.style }}
     >
       <Head {...meta} />
 
@@ -44,8 +52,6 @@ function DefaultLayout({ meta, children, ...otherProps }: any) {
       {/* </Flex> */}
 
       {/* <Footer /> */}
-    </Container>
+    </Page>
   );
 }
-
-export default DefaultLayout;

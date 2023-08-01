@@ -8,7 +8,12 @@ export interface HeadProps {
 }
 import * as config from "../config";
 
-const Head: React.FC<HeadProps> = ({ title, description, image, url }) => {
+export const Head: React.FC<HeadProps> = ({
+  title,
+  description,
+  image,
+  url,
+}) => {
   const theme = useTheme();
 
   const pageTitle = title
@@ -45,12 +50,10 @@ const Head: React.FC<HeadProps> = ({ title, description, image, url }) => {
         key="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
       />
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="manifest" href="/manifest.json" />
+      <link rel="icon" href="/static/favicon.ico" />
+      <link rel="manifest" href="/static/manifest.json" />
 
-      <link rel="icon" type="image/png" href="/favicon.png" />
+      <link rel="icon" type="image/png" href="/static/favicon.png" />
     </NextHead>
   );
 };
-
-export default Head;

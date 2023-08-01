@@ -10,10 +10,7 @@ import {
   responsive,
   Typography,
 } from "@wipsie/ui";
-import DefaultLayout from "../components/DefaultLayout";
-import NextLink from "next/link";
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { DefaultLayout } from "../components/DefaultLayout";
 import { useRouter } from "next/router";
 import { CustomFrame } from "../components/custom/CustomFrame";
 import { CustomLabel } from "../components/custom/CustomLabel";

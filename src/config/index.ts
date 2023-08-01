@@ -1,6 +1,6 @@
 // SITE CONSTANTS
-export const SITE_TITLE = "Wipsie Docs";
-export const SITE_DESCRIPTION = "Wipsie Docs";
+export const SITE_TITLE = "DanBrown";
+export const SITE_DESCRIPTION = "DanBrown";
 export const SITE_URL =
   process.env.NODE_ENV === "production"
     ? "https://docs.wipsie.com"

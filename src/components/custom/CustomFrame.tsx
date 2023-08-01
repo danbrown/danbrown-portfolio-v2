@@ -2,7 +2,7 @@ import { useWidth } from "@wipsie/ui";
 import { motion } from "framer-motion";
 
 export const CustomFrame = () => {
-  const width = useWidth();
+  const width = useWidth() as number;
 
   return (
     <>

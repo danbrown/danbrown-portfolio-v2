@@ -1,14 +1,27 @@
-import ReduxProvider from "./ReduxProvider";
-import ThemeProvider from "./ThemeProvider";
-import LoadingProvider from "./LoadingProvider";
+import ToastProvider from "./ToastProvider";
+import { SWRConfig } from "swr";
+import apiWorker from "@utils/apiWorker";
+import { ThemeProvider } from "./ThemeProvider";
+import { LoadingProvider } from "./LoadingProvider";
 
 const Providers = ({ children }) => {
   return (
-    // <ReduxProvider>
-    <ThemeProvider>
-      <LoadingProvider>{children}</LoadingProvider>
-    </ThemeProvider>
-    // </ReduxProvider>
+    <SWRConfig
+      value={{
+        dedupingInterval: 5000, // the interval for checking deduping (in ms)
+        fetcher: (url) =>
+          apiWorker
+            .get(url)
+            .then((res) => res.data)
+            .catch((err) => null),
+      }}
+    >
+      <ThemeProvider>
+        <ToastProvider>
+          <LoadingProvider>{children}</LoadingProvider>
+        </ToastProvider>
+      </ThemeProvider>
+    </SWRConfig>
   );
 };
 

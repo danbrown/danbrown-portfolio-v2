@@ -1,4 +1,3 @@
-import { FileText } from "react-feather";
 import { FileImageFilled, CaretRightOutlined } from "@ant-design/icons";
 
 type RouteConfig = {
