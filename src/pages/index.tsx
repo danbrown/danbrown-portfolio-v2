@@ -37,6 +37,7 @@ import { FilmGrainEffect } from "@components/custom/FilmGrainEffect";
 import { HoverClipPanel } from "@components/custom/HoverClipPanel";
 import { TextBallon } from "@components/custom/TextBallon";
 import Stickyroll from "@stickyroll/react/stickyroll";
+import { TvContainer } from "@components/custom/TvContainer";
 
 export default function Home(props) {
   const theme = useTheme();
@@ -163,6 +164,32 @@ const FirstPage = ({
         value={totalProgress}
       />
       <Vignette visible={totalProgress > pageIndex + 0.1} />
+      {pageIndex + 0.1}
+      <TvContainer width={responsive(300, 1200)}>
+        <img
+          src={
+            totalProgress >= pageIndex && totalProgress < pageIndex + 0.05
+              ? "https://api-media.zetahex.com/download/6024acc5-569a-421d-a665-e8665ce01529?size=1000"
+              : totalProgress >= pageIndex + 0.05 &&
+                totalProgress < pageIndex + 0.1
+              ? "https://api-media.zetahex.com/download/c0514df8-e470-4448-ad44-401ff9c77e8b?size=1000"
+              : totalProgress >= pageIndex + 0.15 &&
+                totalProgress < pageIndex + 0.2
+              ? "https://api-media.zetahex.com/download/45cdc752-1b9a-4143-b3e9-3b7999479112?size=1000"
+              : totalProgress >= pageIndex + 0.25 &&
+                totalProgress < pageIndex + 0.3
+              ? "https://api-media.zetahex.com/download/321fe1af-b277-4786-82ce-d9d670aab6c1?size=1000s"
+              : "https://api-media.zetahex.com/download/83801b95-8583-4245-953e-e781953fd0b2?size=1000"
+          }
+          alt=""
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
+        />
+      </TvContainer>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste eligendi ea
       cumque nihil magnam, rerum maiores, excepturi esse dolore tempore
       consequuntur. Deleniti reprehenderit culpa quas vel id pariatur voluptate
