@@ -2,14 +2,15 @@ import { responsive, useTheme } from "@wipsie/ui";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
-export const CustomLabel = ({ href, label }) => {
+export const CustomLabel = ({ href = null, label, onClick = (e) => {} }) => {
   const theme = useTheme();
   const router = useRouter();
 
   return (
     <motion.div
-      onClick={() => {
-        router.push(href);
+      onClick={(e) => {
+        onClick && onClick(e);
+        href && router.push(href);
       }}
       style={{
         width: responsive(200, 350),
@@ -33,7 +34,7 @@ export const CustomLabel = ({ href, label }) => {
       }}
     >
       <img
-        src="./static/shape-label.svg"
+        src="./static/shapes/shape-label.svg"
         alt=""
         style={{
           position: "absolute",

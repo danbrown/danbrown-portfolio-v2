@@ -28,7 +28,7 @@ export default function Home(props) {
       {/* <CustomFrame /> */}
 
       {/* <motion.img
-        src="./static/shape-stripes.svg"
+        src="./static/shapes/shape-stripes.svg"
         style={{
           position: "absolute",
           top: "calc(50%)",
@@ -44,7 +44,7 @@ export default function Home(props) {
       /> */}
 
       <video
-        src="./assets/phone.mp4"
+        src="./static/assets/phone.mp4"
         loop
         muted
         autoPlay

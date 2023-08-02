@@ -34,12 +34,12 @@ export function DefaultLayout({
       backgroundColor="#1E2DEA"
       shape="square"
       display="flex"
-      align="center"
-      justify="center"
-      maxWidth="100vw"
-      maxHeight="100vh"
-      width="100vw"
-      height="100vh"
+      // align="center"
+      // justify="center"
+      // maxWidth="100vw"
+      // maxHeight="100vh"
+      minWidth="100vw"
+      minHeight="100vh"
       {...otherProps}
       style={{ overflow: "hidden", ...otherProps?.style }}
     >

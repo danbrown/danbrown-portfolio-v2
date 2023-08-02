@@ -210,6 +210,11 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz#7f698254aadf921e48dda8c0a6b304026b8a9323"
   integrity sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==
 
+"@stickyroll/react@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@stickyroll/react/-/react-2.0.3.tgz#6e6d6127a0689c6b2992b5363e17b073ba3e5d72"
+  integrity sha512-Xmn6Wb/lt0LzXIw1G4Y+HN3FYyV02IbynUWECZfpf1ymyHllT1ZZKNQtDI3SrMovNmb/XSb6UHcwhDR3OPRtjQ==
+
 "@swc/helpers@0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.1.tgz#e9031491aa3f26bfcc974a67f48bd456c8a5357a"

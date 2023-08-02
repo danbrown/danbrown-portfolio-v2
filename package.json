@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@stickyroll/react": "^2.0.3",
     "@wipsie/icons": "^1.0.2",
     "@wipsie/ui": "^1.0.237",
     "axios": "^0.24.0",

@@ -1,5 +1,5 @@
 @font-face {
   font-family: "AreYouOkay";
-  src: url("/fonts/are-you-okay.otf") format("opentype"),
-    url("/fonts/are-you-okay.ttf") format("truetype");
+  src: url("/static/fonts/are-you-okay.otf") format("opentype"),
+    url("/static/fonts/are-you-okay.ttf") format("truetype");
 }
