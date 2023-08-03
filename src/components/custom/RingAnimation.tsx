@@ -38,6 +38,8 @@ export const RingAnimation = ({
           WebkitBackfaceVisibility: "hidden",
           willChange: "transform", // Promote the element to a new layer
           opacity: 1, // Reduced opacity to avoid flickering
+          pointerEvents: "none",
+          userSelect: "none",
         }}
         initial={{ scale: 0 }}
         animate={{ scale: 2 }}

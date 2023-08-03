@@ -20,6 +20,8 @@ export const FilmGrainEffect = ({
           position: "relative",
           filter: sepiaFilter ? `sepia(0.75)` : "none",
           overflow: "hidden",
+          pointerEvents: "none",
+          userSelect: "none",
           ...style,
         }}
         transition={{ duration: animationDuration, repeat: Infinity }}

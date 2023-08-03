@@ -16,6 +16,9 @@ export const PaintSplash = ({
           style={{
             width: width,
             height: "auto",
+            pointerEvents: "none",
+            userSelect: "none",
+
             ...wrapperStyle,
           }}
           initial={{ opacity: 0, scale: 0 }}

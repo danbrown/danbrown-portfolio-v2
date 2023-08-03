@@ -1,6 +1,6 @@
 import { ReactNode, useState } from "react";
 import { ClipContainer, ClipContainerType } from "./CustomClipMaterials";
-import { ContainerProps, Flex } from "@wipsie/ui";
+import { AspectRatio, ContainerProps, Flex } from "@wipsie/ui";
 
 export const HoverClipPanel = ({
   children = null,
@@ -58,6 +58,8 @@ export const HoverClipPanel = ({
           position: "absolute",
           top: 0,
           left: 0,
+          pointerEvents: "none",
+          userSelect: "none",
           // transform: "scale(1.01) rotate(4deg) translate(0.5%, 0px)",
           transform: `scale(${isHovered ? finalScale : initialScale}) rotate(${
             isHovered ? finalAngle : initalAngle

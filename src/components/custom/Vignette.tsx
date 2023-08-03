@@ -13,6 +13,8 @@ export const Vignette = ({ style = {}, visible = true }) => {
         background: `url(./static/assets/vignette.png) no-repeat`,
         backgroundSize: "cover",
         backgroundPosition: "center bottom", // Adjust vertical position as needed
+        pointerEvents: "none",
+        userSelect: "none",
         ...style,
       }}
       initial={{ opacity: 0 }}
