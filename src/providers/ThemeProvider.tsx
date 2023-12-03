@@ -8,6 +8,7 @@ import {
   darkTheme,
   WipsieThemes,
   lightTheme,
+  WipsieThemesFonts,
 } from "@wipsie/ui";
 import "@wipsie/ui/dist/esm/static/styles/base.css";
 import useLocalStorage from "@hooks/useLocalStorage";
@@ -79,6 +80,89 @@ export const useThemeChange = () => {
   return { currentTheme, setCurrentTheme };
 };
 
+const customTypography: WipsieThemesFonts = {
+  ...lightTheme.font,
+
+  h1: {
+    ...lightTheme.font.h1,
+    fontFamily:
+      '"TT Firs Neue","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  h2: {
+    ...lightTheme.font.h2,
+    fontFamily:
+      '"TT Firs Neue","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  h3: {
+    ...lightTheme.font.h3,
+    fontFamily:
+      '"TT Firs Neue","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  h4: {
+    ...lightTheme.font.h4,
+    fontFamily:
+      '"TT Firs Neue","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  h5: {
+    ...lightTheme.font.h5,
+    fontFamily:
+      '"TT Firs Neue","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  h6: {
+    ...lightTheme.font.h6,
+    fontFamily:
+      '"TT Firs Neue","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+
+  subtitle1: {
+    ...lightTheme.font.subtitle1,
+    fontFamily:
+      '"TT Firs Neue","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+
+  subtitle2: {
+    ...lightTheme.font.subtitle2,
+    fontFamily:
+      '"TT Firs Neue","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+
+  body1: {
+    ...lightTheme.font.body1,
+    fontFamily:
+      '"DM Sans","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+
+  body2: {
+    ...lightTheme.font.body2,
+    fontFamily:
+      '"DM Sans","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+
+  caption1: {
+    ...lightTheme.font.caption1,
+    fontFamily:
+      '"DM Sans","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+
+  caption2: {
+    ...lightTheme.font.caption2,
+    fontFamily:
+      '"DM Sans","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+
+  label: {
+    ...lightTheme.font.label,
+    fontFamily:
+      '"DM Sans","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+
+  code: {
+    ...lightTheme.font.code,
+    fontFamily:
+      '"DM Sans","Montserrat", "Open Sans", "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+};
+
 const danbrownTheme: WipsieThemes = {
   ...darkTheme,
 
@@ -125,6 +209,11 @@ const danbrownTheme: WipsieThemes = {
       shadow: "#13B8603D",
     },
   },
+  font: customTypography,
+  layout: {
+    ...darkTheme.layout,
+    defaultShape: "square",
+  },
 };
 
 const danbrownLightTheme: WipsieThemes = {
@@ -159,6 +248,11 @@ const danbrownLightTheme: WipsieThemes = {
       "900": "#0D9A5D",
       shadow: "#13B8603D",
     },
+  },
+  font: customTypography,
+  layout: {
+    ...lightTheme.layout,
+    defaultShape: "square",
   },
 };
 
